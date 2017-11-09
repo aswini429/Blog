@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage3.master.cs" Inherits="MasterPage3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1059px;
+            height: 525px;
+        }
+        .auto-style2 {
+            height: 43px;
+        }
+        .auto-style3 {
+            height: 50px;
+            width: 62px;
+        }
+        .auto-style4 {
+            height: 43px;
+            width: 753px;
+        }
+        .auto-style5 {
+            height: 50px;
+            width: 753px;
+        }
+        .auto-style6 {
+            width: 753px;
+        }
+        .auto-style7 {
+            height: 43px;
+            width: 62px;
+        }
+        .auto-style8 {
+            width: 62px;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <thead>
+                <tr>
+                    <td class="auto-style7"><h2>.Net</h2></td>
+                    <td class="auto-style4"><asp:Image ID= "imag1"  runat="server" /></td>
+                    <td class="auto-style2"><asp:Image ID="imag2" runat="server" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style3"></td>
+                    <td class="auto-style5"><asp:Menu ID="menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="Users" NavigateUrl="~/Admin/Usersadmin.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Articles" NavigateUrl="~/Admin/adminviewarticles.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Projects" NavigateUrl="~/Admin/AdminProjects.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Forums" NavigateUrl="~/Admin/AdminForums.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Logout" NavigateUrl="~/Admin/adminLogout.aspx"></asp:MenuItem>
+                        </Items>
+                        </asp:Menu></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style6">  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style6">copyrights@2017</td>
+                </tr>
+            </tfoot>
+        </table>
+      
+        
+       
+    </div>
+    </form>
+</body>
+</html>

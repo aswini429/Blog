@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style2 {
+            width: 159px;
+        }
+        .auto-style3 {
+            width: 141px;
+        }
+        .auto-style4 {
+            width: 159px;
+            height: 67px;
+        }
+        .auto-style5 {
+            width: 141px;
+            height: 67px;
+        }
+        .auto-style6 {
+            height: 67px;
+            width: 105px;
+        }
+        .auto-style7 {
+            width: 159px;
+            height: 64px;
+        }
+        .auto-style8 {
+            width: 141px;
+            height: 64px;
+            align-content:center;
+            align-items:center;
+        }
+        .auto-style11 {
+            height: 180px;
+            width: 105px;
+        }
+        .auto-style12 {
+            height: 180px;
+            width: 141px;
+        }
+        .auto-style13 {
+            height: 180px;
+            width: 159px;
+        }
+    </style>
+    
+</head>
+<body style="background-color:azure">
+    <form id="form1" runat="server">
+    <div style="text-align:center">
+        <table>
+            <thead>
+            <tr style="border:dashed">
+  
+                
+                <td class="auto-style4" style="font-family:Arial;color:blue"><h3>.NetCommunity</h3></td>
+                <td class="auto-style5"><asp:Image ID="image1" runat="server"  /></td>
+                <td class="auto-style6">
+                    <asp:HyperLink ID="admin" runat="server" NavigateUrl="~/Admin/AdminLogin.aspx" Text="Admin" ></asp:HyperLink>
+                  </td>
+                
+            </tr>
+             
+                <tr>
+                    <%--<th> <asp:LinkButton ID="linkhome" runat="server" Text="Home" OnClick="linkhome_Click"></asp:LinkButton></th>
+                    <th>Login</th>
+                    <th>AboutUs</th>
+                    <th>ContactUs</th>
+                    <th>Register</th>--%>
+                    <th class="auto-style7"></th>
+                    <th class="auto-style8">
+                    &nbsp;&nbsp;
+                    <asp:Menu ID="menu" runat="server" Orientation="Horizontal" StaticSubMenuIndent="16px" BorderColor="red" Font-Bold="true" BorderWidth="1" BorderStyle="Dotted" BackColor="Blue" ForeColor="Red">
+                        <Items>
+                            <asp:MenuItem Text="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Login" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="AboutUs"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact us"></asp:MenuItem>
+                            <asp:MenuItem Text="Register" NavigateUrl="~/Register.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                        </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="auto-style13"></td>
+                <td class="auto-style12"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder> </td>
+                    <td class="auto-style11"></td>
+                    </tr>
+
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <td class="auto-style2"> </td>
+                    <td class="auto-style3">copyright@2017</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
